@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'MonaSans';
+
+    src: url('../src/assets/fonts/MonaSans-Bold.ttf') format('truetype');
+    src: url('../src/assets/fonts/MonaSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MonaSans';
+    src: url('../src/assets/fonts/MonaSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'MonaSans';
+    src: url('../src/assets/fonts/MonaSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}

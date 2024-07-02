@@ -1,0 +1,161 @@
+.NavBar {
+    margin: 0;
+    padding: 24px 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'MonaSans';
+    position: relative;
+}
+.dribbble-logo-center {
+    position: absolute;
+    left: 50%;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+li {
+    color: #0d0c22;
+    font-size: 14px;
+    padding: 0px 16px;
+    font-weight: 600;
+}
+
+.left-navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search-icon-svg {
+    padding: 0px 4px;
+}
+
+.right-navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    background-color: #f4f5fb;
+    align-items: center;
+    padding: 16px 16px;
+    gap:4px;
+    border-radius: 60px;
+    border-width: 1px;
+}
+
+.search-input {
+    background-color: #f4f5fb;
+    border: none;
+    padding: 0px 4px;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.search input{
+    outline: none;
+    border: none;
+    background-color: #f4f5fb;
+}
+.suggestions-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #f4f5fb;
+    border-radius: 4px;
+}
+
+.suggestions-list li {
+    padding: 10px 20px 20px 40px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.suggestions-list li:hover {
+    background-color: #f0f0f0;
+}
+
+.suggestion-userName {
+    font-weight: bold;
+    padding-bottom: 4px;
+}
+
+.suggestion-thumbnailName {
+    color: #666;
+    margin-bottom: 4px;
+    font-size: 12px;
+}
+
+.user-profile-image {
+    width: 46px;
+    height: 46px;
+    border-radius: 100%;
+}
+
+@media (max-width: 1024px) {
+    .NavBar {
+        width: 100%;
+    }
+}
+
+@media (max-width: 2560px) and (min-width: 2041px) {
+    .dribbble-logo-left {
+        display: none;
+    }
+    .left-navbar ul {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 2040px) and (min-width: 1440px) {
+    .dribbble-logo-left {
+        display: none;
+    }
+    .left-navbar ul {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 1439px) and (min-width: 1025px) {
+    .dribbble-logo-left {
+        display: none;
+    }
+    .left-navbar ul {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .dribbble-logo-center {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 577px) {
+    .dribbble-logo-center {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .dribbble-logo-center {
+        display: none;
+    }
+}
